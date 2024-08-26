@@ -1,7 +1,6 @@
 
-const removeFromArray = function(array, removal) {
-    //CONVERT removal to array
-    let newArray = array.filter((word) => word !== removal);
+const removeFromArray = function(array, ...removal) {
+    let newArray = array.filter((word) => !removal.includes(word));
     return newArray;
 };
 
