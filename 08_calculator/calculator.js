@@ -22,11 +22,11 @@ const factorial = function(number) {
 	if (number === 0) {
     return 1;
   }
-  let result = 0;
-  for (let i = 0; i < number; i++) {
-    result += number * i;
+  let product = number;
+  for (let i = 1; i < number; i++) {
+    product *= i;
   }
-  return result;
+  return product;
 };
 
 // Do not edit below this line
